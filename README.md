@@ -4,6 +4,7 @@
 |------------------|-------|-------------------------|
 |email             |string |null: false, unique: true|
 |encrypted_password|string |null: false              |
+|name              |string |null: false              |
 |birthday          |date   |null: false              |
 |gender_id         |integer|null: false              |
 |prefecture_id     |integer|null: false              |
@@ -19,9 +20,9 @@
 
 ## rooms　テーブル
 
-|Column  |Type      |Options    |
-|--------|----------|-----------|
-|agenda  |string    |null: false|
+|Column  |Type      |Options                       |
+|--------|----------|------------------------------|
+|agenda  |string    |null: false                   |
 |stance_a|references|null: false, foreign_key: true|
 
 ### Association
