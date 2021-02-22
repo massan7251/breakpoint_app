@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2021-02-22T06:17:44.544Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" version="14.2.4" etag="9z9zAbUiWtzufKkrz4LM" type="embed">
+<mxfile host="65bd71144e" modified="2021-02-22T06:22:51.008Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" version="14.2.4" etag="NvOrvbhJZRrU0A4LWF1Z" type="embed">
     <diagram id="YzYn7D5Rv3y1cmwwDXG_" name="ページ1">
         <mxGraphModel dx="898" dy="680" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
@@ -59,6 +59,11 @@
                 <mxCell id="17" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.542;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6" target="7">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.825;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="19">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="637" y="210" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
                 <UserObject label="チャットルームページ" treeRoot="1" id="6">
                     <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
                         <mxGeometry x="640" y="200" width="130" height="60" as="geometry"/>
@@ -75,6 +80,16 @@
                 <UserObject label="ルーム編集ページ" treeRoot="1" id="7">
                     <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
                         <mxGeometry x="640" y="80" width="120" height="60" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="22" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.633;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="19">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="197" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <UserObject label="コメント編集ページ" treeRoot="1" id="19">
+                    <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+                        <mxGeometry x="440" y="80" width="120" height="60" as="geometry"/>
                     </mxCell>
                 </UserObject>
             </root>
