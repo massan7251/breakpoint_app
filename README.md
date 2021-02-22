@@ -19,28 +19,27 @@
 
 ## rooms　テーブル
 
-|Column   |Type  |Options    |
-|---------|------|-----------|
-|agenda   |string|null: false|
-|stance_a |string|null: false|
-|stance_b |string|null: false|
+|Column  |Type      |Options    |
+|--------|----------|-----------|
+|agenda  |string    |null: false|
+|stance_a|references|null: false, foreign_key: true|
 
 ### Association
 
 - has_many :user
-- has_many :stances
+- has_one :stance
 - has_many :posts
 
 ## stances テーブル
-|Column  |Type      |Options                       |
-|--------|----------|------------------------------|
-|stance_a|string    |null: false                   |
-|stance_b|string    |null: false                   |
+|Column |Type      |Options                       |
+|-------|----------|------------------------------|
+|stanceA|string    |null: false                   |
+|stanceB|string    |null: false                   |
+|room   |references|null: false, foreign_key: true|
 
 ### Association
 
 - belongs_to :room
-- belongs_to :post
 
 ## user_rooms テーブル
 |Column|Type      |Options                       |
@@ -77,4 +76,3 @@
 
 - belongs_to :user
 - belongs_to :room
-- belongs_to :stance
