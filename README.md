@@ -23,7 +23,7 @@
 |Column  |Type      |Options                       |
 |--------|----------|------------------------------|
 |agenda  |string    |null: false                   |
-|stance_a|references|null: false, foreign_key: true|
+|stance  |references|null: false, foreign_key: true|
 
 ### Association
 
@@ -36,7 +36,6 @@
 |-------|----------|------------------------------|
 |stanceA|string    |null: false                   |
 |stanceB|string    |null: false                   |
-|room   |references|null: false, foreign_key: true|
 
 ### Association
 
