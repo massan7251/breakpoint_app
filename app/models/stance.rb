@@ -1,0 +1,2 @@
+class Stance < ApplicationRecord
+end
