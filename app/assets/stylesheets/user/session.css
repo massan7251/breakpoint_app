@@ -31,12 +31,18 @@
   margin: 0vh auto;
 }
 
+input {
+  height: 25px;
+  border-radius: 4px;
+}
+
 .field {
   margin: 3vh auto;
   width: 100%;
 }
 
 .sign-in-btn {
+  height: 30px;
   padding: 3px 60px;
   margin: 10vh auto;
   background-color: red;

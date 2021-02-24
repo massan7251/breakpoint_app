@@ -43,14 +43,17 @@
 
   <div class="field">
     <div class="contents-title">性別</div>
+    <%= f.collection_select(:gender_id, Gender.all, :id, :name, {}, {class:"select-box", id:"user-gender"}) %>
   </div>
 
   <div class="field">
     <div class="contents-title">住所</div>
+    <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"user-prefecture"}) %>
   </div>
 
   <div class="field">
     <div class="contents-title">職業</div>
+    <%= f.collection_select(:job_id, Job.all, :id, :name, {}, {class:"select-box", id:"user-job"}) %>
   </div>
 
   <div class="actions">
