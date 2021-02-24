@@ -199,10 +199,17 @@
   /* Remove the default button styling in all browsers */
   button,
   input,
-  select,
   textarea {
-    background-color: transparent;
-    border-style: none;
+    border: black solid 1px ;
+    border-radius: 5px;
+    margin: 0 1vw;
+    width: 100%;
+  }
+
+  select {
+    border: black solid 1px ;
+    border-radius: 5px;
+    margin: 0 1vw;
   }
   
   /* Style select like a standard input */

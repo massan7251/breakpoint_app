@@ -1,0 +1,61 @@
+<div class="sign-up-contents">
+<h2 class="sign-up-title">新規登録</h2>
+<div class="sign-up-form">
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <div class="contents-title">メールアドレス</div>
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="password-content">
+  <div class="field">
+    <div class="contents-title">パスワード</div>
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <div class="contents-title">パスワード再入力</div>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+  </div>
+
+  <div class="field">
+    <div class="contents-title">ユーザー名</div>
+    <%= f.email_field :name, autofocus: true, autocomplete: "name" %>
+  </div>
+
+  <div class="contents-title">生年月日</div>
+  <div class='input-birth-wrap'>
+      <%= raw sprintf(
+                  f.date_select(
+                    :birthday,
+                    class:'select-birth',
+                    id:"birth-date",
+                    use_month_numbers: true,
+                    prompt:'--',
+                    start_year: 1930,
+                    end_year: (Time.now.year - 5),
+                    date_separator: '%s'),
+                  "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
+  </div>
+
+  <div class="field">
+    <div class="contents-title">性別</div>
+  </div>
+
+  <div class="field">
+    <div class="contents-title">住所</div>
+  </div>
+
+  <div class="field">
+    <div class="contents-title">職業</div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "登録", class: "sign-up-btn" %>
+  </div>
+<% end %>
+</div>
+</div>

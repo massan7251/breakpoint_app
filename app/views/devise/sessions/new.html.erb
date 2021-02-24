@@ -1,0 +1,22 @@
+<div class="sign-in-contents">
+<h2 class="sign-in-title">ログイン</h2>
+<div class="sign-in-form">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <div class="contents-title">メールアドレス</div>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <div class="contents-title">パスワード</div>
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "ログイン", class: "sign-in-btn" %>
+  </div>
+<% end %>
+</div>
+</div>
+
+
