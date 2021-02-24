@@ -487,3 +487,16 @@ th {
 [非表示] {
   表示：なし;
 }
+
+body {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.input-default {
+  height: 25px;
+  border-radius: 4px;
+}
