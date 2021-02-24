@@ -1,8 +1,9 @@
-<div class="sign-up-contents">
+<%= form_with model: @user, url: user_registration_path, class: "sign-up-form", local: true do |f| %>
 <h2 class="sign-up-title">新規登録</h2>
-<div class="sign-up-form">
-<%= form_with model: @user, url: user_registration_path, local: true do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+
+<div class='login-flash-message'>
+  <%= render 'shared/error_messages', model: f.object %>
+</div>
 
   <div class="field">
     <div class="contents-title">メールアドレス</div>
@@ -60,5 +61,3 @@
     <%= f.submit "登録", class: "sign-up-btn" %>
   </div>
 <% end %>
-</div>
-</div>

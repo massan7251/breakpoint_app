@@ -500,3 +500,7 @@ textarea {
   height: 25px;
   border-radius: 4px;
 }
+
+.login-flash-message {
+  color: red;
+}
