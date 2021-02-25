@@ -12,14 +12,10 @@
 
 .sign-up-title {
   width: 100%;
+  font-size: 30px;
   text-align: center;
   padding: 5vh 0 5vh 0;
   border-bottom: white solid 3px;
-}
-
-.contents-title {
-  font-size: 15px;
-  margin: 0vh auto;
 }
 
 .field {
@@ -37,9 +33,11 @@
   margin: 0 5px 0 0;
 }
 
+label {
+  margin-bottom: 5px;
+}
 
-
-input, select {
+input, select, textarea {
   height: 25px;
   border-radius: 4px;
 }

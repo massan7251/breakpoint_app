@@ -1,6 +1,6 @@
 
 .sign-in-form {
-  height: 80vh;
+  height: 100%;
   width: 50vw;
   margin: 10vh 25vw;
   padding: 0 5vw;
@@ -13,14 +13,14 @@
 
 .sign-in-title {
   width: 100%;
+  font-size: 30px;
   text-align: center;
   padding: 5vh 0 5vh 0;
   border-bottom: white solid 3px;
 }
 
-.contents-title {
-  font-size: 15px;
-  margin: 0vh auto;
+label {
+  margin-bottom: 5px;
 }
 
 input {

@@ -6,28 +6,28 @@
 </div>
 
   <div class="field">
-    <div class="contents-title">メールアドレス</div>
+    <label for = "user_email">メールアドレス</label>
     <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="password-content">
   <div class="field">
-    <div class="contents-title">パスワード</div>
+    <label for = "user_password">パスワード</label>
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
   <div class="field">
-    <div class="contents-title">パスワード再入力</div>
+    <label for = "user_password_confirmation">パスワード再入力</label>
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
   </div>
 
   <div class="field">
-    <div class="contents-title">ユーザー名</div>
-    <%= f.text_area :name, class: "input-default", id: "name", autofocus: true %>
+    <label for = "user_name">ユーザー名</label>
+    <%= f.text_area :name, class: "input-default", autofocus: true %>
   </div>
 
-  <div class="contents-title">生年月日</div>
+  <label> 生年月日</label>
   <div class='input-birth-wrap'>
       <%= raw sprintf(
                   f.date_select(
@@ -43,17 +43,17 @@
   </div>
 
   <div class="field">
-    <div class="contents-title">性別</div>
+    <label> 性別</label>
     <%= f.collection_select(:gender_id, Gender.all, :id, :name, {}, {class:"select-box", id:"user-gender"}) %>
   </div>
 
   <div class="field">
-    <div class="contents-title">住所</div>
+    <label> 住所</label>
     <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"user-prefecture"}) %>
   </div>
 
   <div class="field">
-    <div class="contents-title">職業</div>
+    <label> 職業</label>
     <%= f.collection_select(:job_id, Job.all, :id, :name, {}, {class:"select-box", id:"user-job"}) %>
   </div>
 
