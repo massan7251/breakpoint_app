@@ -1,5 +1,13 @@
-<div class="search-form">検索フォーム予定地</div>
 <div class="room-contents">
+<div class="search-form">検索フォーム予定地</div>
+
+<%= link_to('rooms/new', url: new_room_path, class: "create-room-btn") do %>
+<div class="create-room-contents">
+  <%= image_tag '会議アイコン3.png' , size: '60x60' , class: "create-room-icon" %>
+  <p class="create-room-text">チャットルームを作成する</p>
+</div>
+<% end %>
+
  <h1 class="title">チャットルーム一覧</h1>
  <ul class="room-lists">
   <li>smple room</li>
