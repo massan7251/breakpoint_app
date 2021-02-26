@@ -4,18 +4,24 @@
 
 <%= render 'shared/error_messages', model: f.object %>
 
-<div class="new-room">
-  <div class="contents-tile">ルームのアジェンダを設定</div>
+<div class="contents-tile">
+  <div class="room-agenda">
+    <label for = "room_agenda">ルームのアジェンダを設定</label>
+  </div>
   <%= f.text_area :agenda, class:"room-agenda", placeholder:"例) あなたは犬派？それとも猫派？" %>
 
   <div class="contents-tile">2つのスタンスを設定</div>
     <div class="stance-contents-title">
-      <div class="stance-A-title">スタンスA</div>
+      <div class="stance-A-title">
+      <label for = "room_stanceA">スタンスA</label>
+      </div>
       <%= f.text_area :stanceA, class:"room-stanseA", placeholder:"例) 犬派" %>
     </div>
 
     <div class="stance-contents-title">
-      <div class="stance-B-title">スタンスB</div>
+      <div class="stance-B-title">
+      <label for = "room_stanceB">スタンスB</label>
+      </div>
       <%= f.text_area :stanceB, class:"room-stanceB", placeholder:"例) 猫派" %>
     </div>
 
