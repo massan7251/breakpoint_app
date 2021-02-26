@@ -1,6 +1,9 @@
 <header class='top-page-header'>
  <div>
-  <%= link_to 'BreakPoint', "/", class: "title-logo" %>
+  <%= link_to "/", class: "title-logo-content" do %>
+  <%= image_tag '驚き閃きそんなアイコン.png', size: '40x40' %>
+  <div class="title-logo">BreakPoint</div>
+  <% end %>
  </div>
  <ul class="lists-user">
  <% if user_signed_in? %>

@@ -4,6 +4,7 @@ RSpec.describe User, type: :model do
   before do
     @user = FactoryBot.build(:user)
   end
+  
   describe 'ユーザー新規登録' do
     context '新規登録できるとき' do
       it '全ての情報が正しく入力されていれば登録できる' do

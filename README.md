@@ -20,22 +20,24 @@
 
 ## rooms　テーブル
 
-|Column  |Type      |Options                       |
-|--------|----------|------------------------------|
-|agenda  |string    |null: false                   |
-|stance  |references|null: false, foreign_key: true|
+|Column |Type      |Options                       |
+|-------|----------|------------------------------|
+|agenda |string    |null: false                   |
+|stance |references|null: false, foreign_key: true|
+|stanceA|string    |null: false                   |
+|stanceB|string    |null: false                   |
+|user  |references|null: false, foreign_key: true|
 
 ### Association
 
-- has_many :user
+- has_many :users
 - has_one :stance
 - has_many :posts
 
 ## stances テーブル
-|Column |Type      |Options                       |
-|-------|----------|------------------------------|
-|stanceA|string    |null: false                   |
-|stanceB|string    |null: false                   |
+|Column       |Type   |Options    |
+|-------------|-------|-----------|
+|select_stance|integer|null: false|
 
 ### Association
 
