@@ -5,9 +5,9 @@
 .search-form {
   width: 60vw;
   height: 5vh;
-  margin: 1vh 20vw;
+  margin: 1vh 0 3vh 0;
   padding: 10px;
-  background-color: teal;
+  background-color: skyblue;
   border-radius: 10px;
   text-align: center;
 }
@@ -29,7 +29,7 @@
   align-items: center;
   background-color: white;
   padding: 5px 15px;
-  margin: 3vh 0 5vh 0;
+  margin: 3vh 0 2vh 0 ;
   border: black solid 2px;
   border-radius: 5px;
 }

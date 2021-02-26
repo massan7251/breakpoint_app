@@ -2,6 +2,8 @@
 <h1 class="create-room-title">チャットルームの作成</h1>
 <%= form_with model: @room, url: rooms_path, local: true do |f| %>
 
+<%= render 'shared/error_messages', model: f.object %>
+
 <div class="new-room">
   <div class="contents-tile">ルームのアジェンダを設定</div>
   <%= f.text_area :agenda, class:"room-agenda", placeholder:"例) あなたは犬派？それとも猫派？" %>
@@ -16,14 +18,6 @@
       <div class="stance-B-title">スタンスB</div>
       <%= f.text_area :stanceB, class:"room-stanceB", placeholder:"例) 猫派" %>
     </div>
-
-  <div class="contents-tile">あなたのスタンスを決定</div>
-  <div class="stance-select">
-    <%= label :stance_A, 'スタンスA', value: 1, class:"radio-btn" %>
-    <%= f.radio_button :stanseA, '1' %>
-    <%= label :stance_B, 'スタンスB', value: 2, class:"radio-btn" %>
-    <%= f.radio_button :stanseB, '2' %>
-  </div>
 
   <div class="room-create-btn-contents">
     <%= f.submit "ルーム作成" ,class:"room-create-btn" %>

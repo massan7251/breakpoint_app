@@ -11,11 +11,17 @@
   background-color: lightgray;
 }
 
+.title-logo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 .title-logo {
   color: black;
   font-size: 30px;
   padding: 0 2px 3px 1px;
-  text-decoration: none;
   border-bottom: white solid 3px;
 }
 

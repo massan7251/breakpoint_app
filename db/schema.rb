@@ -10,19 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_25_062420) do
+ActiveRecord::Schema.define(version: 2021_02_26_004547) do
 
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "agenda", null: false
-    t.bigint "stance_id", null: false
+    t.string "stanceA", null: false
+    t.string "stanceB", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["stance_id"], name: "index_rooms_on_stance_id"
+    t.index ["user_id"], name: "index_rooms_on_user_id"
   end
 
   create_table "stances", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "stanceA", null: false
-    t.string "stanceB", null: false
+    t.integer "select_stance"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -53,7 +54,7 @@ ActiveRecord::Schema.define(version: 2021_02_25_062420) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "rooms", "stances"
+  add_foreign_key "rooms", "users"
   add_foreign_key "user_rooms", "rooms"
   add_foreign_key "user_rooms", "users"
 end
