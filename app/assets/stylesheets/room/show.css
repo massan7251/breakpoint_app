@@ -1,8 +1,7 @@
 .chat-room-contents {
-  height: 100vh;
-  width: 80vw;
+  height: 100%;
+  width: 100vw;
   padding:1vh 5vw 0 5vw;
-  margin: 0 10vw;
   background-color:whitesmoke;
   flex-direction: column;
   display: flex;
@@ -16,9 +15,10 @@
   padding: 0 2vw;
 }
 
-.room-title {
+.room-titles {
+  width: 70vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -52,6 +52,10 @@
   background-color: white;
   border: black solid 1px;
   border-radius: 4px;
+}
+
+.chat-contents {
+  margin-top: 2vh;
 }
 
 .chat-view {
@@ -99,3 +103,46 @@ input:checked + .tab_content {
 input:checked + .tab_content + .chat-content {
   display: block;
 }
+
+.room-destroy {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+}
+
+.owner-menu > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.owner-menu-icon {
+  margin-left: 3px;
+}
+
+.owner-menu > li.owner-menu-list {
+  position: relative;
+  width: 70px;
+}
+
+li.owner-menu-list ul.second-menu{
+  position: absolute;
+  top: 20px;
+  height: 25px;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+li.owner-menu-list:hover ul.second-menu {
+  top: 25px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.second-menu {
+  display: flex;
+  align-items: center;
+}
+
