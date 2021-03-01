@@ -13,12 +13,16 @@
  <h1 class="title">チャットルーム一覧</h1>
  <ul class="room-lists">
   <% @room.each do |room| %>
-  <li class="list">
-  <%= link_to room_path(room.id) do %>
-  <%= room.agenda %>
+    <li class="room-list">
+    <div class="room-title">
+      <%= image_tag'会話アイコン.png', size: '30x30', class: "room-icon" %>
+      <%= room.agenda %>
+    </div>
+    <%= link_to room_path(room.id), class:"room-name" do %>
+      <div class="enter-room-btn">入室する</div>
+    <% end %>
+    <li>
   <% end %>
-  <li>
-  <%end%>
  </ul>
  </div>
 </div>

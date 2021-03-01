@@ -43,3 +43,48 @@
   text-decoration: none;
   color: black;
 }
+
+.title {
+  text-align: center;
+}
+
+.room-lists {
+  list-style: none;
+  width: 50vw;
+}
+
+.room-list {
+  height: 60px;
+  width: 100%;
+  margin: 1vh;
+  padding: 10px;
+  background-color:white;
+  border: black solid 1px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room-name {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.enter-room-btn {
+  margin: 5px;
+  padding: 10px;
+  border:black solid 1px;
+  border-radius: 4px;
+  background-color: lightgray;
+}
+
+.room-title {
+  font-size: 16px;
+}
+
+.room-icon {
+  margin-right: 10px;
+}
+

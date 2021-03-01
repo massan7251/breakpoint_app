@@ -1,7 +1,8 @@
 .chat-room-contents {
-  width: 100vw;
   height: 100vh;
-  padding:1vh 10vw 0 10vw;
+  width: 80vw;
+  padding:1vh 5vw 0 5vw;
+  margin: 0 10vw;
   background-color:whitesmoke;
   flex-direction: column;
   display: flex;
@@ -55,10 +56,9 @@
 
 .chat-view {
   height: 70vh;
-  width: 70vw;
+  width: 100%;
   background-color: white;
   border: black solid 1px;
-  border-radius: 4px;
 }
 
 .chat-form {
