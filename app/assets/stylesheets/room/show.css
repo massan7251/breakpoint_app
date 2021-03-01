@@ -1,7 +1,7 @@
 .chat-room-contents {
   width: 100vw;
   height: 100vh;
-  padding:1vh 15vw 0 15vw;
+  padding:1vh 10vw 0 10vw;
   background-color:whitesmoke;
   flex-direction: column;
   display: flex;
@@ -51,4 +51,51 @@
   background-color: white;
   border: black solid 1px;
   border-radius: 4px;
+}
+
+.chat-view {
+  height: 70vh;
+  width: 70vw;
+  background-color: white;
+  border: black solid 1px;
+  border-radius: 4px;
+}
+
+.chat-form {
+  width: 500px;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab_content {
+  height: 50px;
+  width: 50%;
+  background-color: darkgrey;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  float: left;
+  order: -1;
+}
+
+input[name="tab_name"] {
+  display: none;
+}
+
+input:checked + .tab_content {
+  background-color: cadetblue;
+  color: aliceblue;
+}
+ 
+.chat-content {
+  display: none;
+  width: 100%;
+}
+ 
+input:checked + .tab_content + .chat-content {
+  display: block;
 }
