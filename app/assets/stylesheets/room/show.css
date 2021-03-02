@@ -110,39 +110,5 @@ input:checked + .tab_content + .chat-content {
   color: black;
 }
 
-.owner-menu > li > a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
 
-.owner-menu-icon {
-  margin-left: 3px;
-}
-
-.owner-menu > li.owner-menu-list {
-  position: relative;
-  width: 70px;
-}
-
-li.owner-menu-list ul.second-menu{
-  position: absolute;
-  top: 20px;
-  height: 25px;
-  width: 100%;
-  
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-}
-
-li.owner-menu-list:hover ul.second-menu {
-  top: 25px;
-  visibility: visible;
-  opacity: 1;
-}
-
-.second-menu {
-  display: flex;
-  align-items: center;
-}
 
