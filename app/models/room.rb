@@ -1,7 +1,7 @@
 class Room < ApplicationRecord
 
-  has_many :users, through: :user_rooms
-  has_many :user_rooms
+  has_many :users, through: :posts
+  has_many :posts
   has_one :stance
 
   with_options presence: true do
