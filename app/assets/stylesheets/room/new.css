@@ -17,7 +17,7 @@
   border-bottom: white solid 3px;
 }
 
-.contents-tile {
+.create-contents-title {
   margin-top: 7vh;
   margin-bottom: 1vh;
   font-size: 18px;
@@ -38,17 +38,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.radio-btn {
-  padding: 1vh 1vw 1vh 2vw;
-  margin-right: 1vw;
-  background-color: silver;
-  border-radius: 4px;
-  border:black solid 2px;
-}
-input[type=radio] {
-  display: none;
 }
 
 .room-create-btn-contents {

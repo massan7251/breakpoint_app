@@ -4,13 +4,13 @@
 
 <%= render 'shared/error_messages', model: f.object %>
 
-<div class="contents-tile">
+<div class="create-contents-title">
   <div class="room-agenda">
     <label for = "room_agenda">ルームのアジェンダを設定</label>
   </div>
   <%= f.text_area :agenda, class:"room-agenda", placeholder:"例) あなたは犬派？それとも猫派？" %>
 
-  <div class="contents-tile">2つのスタンスを設定</div>
+  <div class="create-contents-title">2つのスタンスを設定</div>
     <div class="stance-contents-title">
       <div class="stance-A-title">
       <label for = "room_stanceA">スタンスA</label>
