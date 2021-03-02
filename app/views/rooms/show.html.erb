@@ -31,15 +31,15 @@
 <ul class="owner-menu">
   <li class="owner-menu-list">
     <a href="#" class="init-bottom">
-      <span>menu</span><%= image_tag '矢印アイコン　下4.png', size: '12x12', class: "owner-menu-icon" %>
+      menu<%= image_tag '矢印アイコン　下4.png', size: '12x12', class: "owner-menu-icon" %>
     </a>
   <ul class="second-menu">
-    <%= link_to room_path, method: :delete, class: "room-destroy" do %>
     <li>
+    <%= link_to room_path, method: :delete, class: "room-destroy" do %>
       <%= image_tag 'ゴミ箱のアイコン素材.png', size: '16x16' %>
-      <span>削除</span>
-    </li>
+      削除
     <% end %>
+    </li>
   </ul>
   </li>
 </ul>
