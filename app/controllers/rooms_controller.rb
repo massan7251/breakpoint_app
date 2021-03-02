@@ -21,6 +21,7 @@ class RoomsController < ApplicationController
   end
 
   def show
+    @post = Post.create
   end
 
   def destroy

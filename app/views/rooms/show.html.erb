@@ -57,12 +57,26 @@
     <input type="radio" name="tab_name" id="tab_a">
     <label class="tab_content" for="tab_a">スタンスA</label>
     <div class="chat-content">
-      スタンスAのチャットフォーム
+      
+      <%= form_with(model: [@room, @post], local: true) do |f| %>
+      <div class="form-input">
+        <%= f.text_field :post_a, class: 'form-comment', placeholder: 'スタンスAとしてコメント' %>
+      </div>
+      <%= f.submit '送信', class: 'form-submit' %>
+      <% end %>
+
     </div>
     <input type="radio" name="tab_name" id="tab_b">
     <label class="tab_content" for="tab_b">スタンスB</label>
     <div class="chat-content">
-      スタンスBのチャットフォーム
+      
+      <%= form_with(model: [@room, @post], local: true) do |f| %>
+      <div class="form-input">
+        <%= f.text_field :post_b, class: 'form-comment', placeholder: 'スタンスBとしてコメント' %>
+      </div>
+      <%= f.submit '送信', class: 'form-submit' %>
+      <% end %>
+
     </div>
   </div>
 
