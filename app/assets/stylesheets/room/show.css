@@ -1,8 +1,8 @@
 .chat-room-contents {
   height: 100%;
   width: 100vw;
-  padding:1vh 5vw 0 5vw;
-  background-color:whitesmoke;
+  padding: 1vh 5vw 0 5vw;
+  background-color: whitesmoke;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -82,7 +82,6 @@
   font-size: 15px;
   text-align: center;
   display: block;
-  float: left;
   order: -1;
 }
 
@@ -110,5 +109,39 @@ input:checked + .tab_content + .chat-content {
   color: black;
 }
 
+.owner-menu > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
 
+.owner-menu-icon {
+  margin-left: 3px;
+}
+
+.owner-menu > li.owner-menu-list {
+  position: relative;
+  width: 70px;
+}
+
+li.owner-menu-list ul.second-menu{
+  position: absolute;
+  top: 20px;
+  height: 25px;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+li.owner-menu-list:hover ul.second-menu {
+  top: 25px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.second-menu {
+  display: flex;
+  align-items: center;
+}
 
