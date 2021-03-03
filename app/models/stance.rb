@@ -1,4 +1,0 @@
-class Stance < ApplicationRecord
-
-  belongs_to :room
-end

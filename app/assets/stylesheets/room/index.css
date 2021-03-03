@@ -86,6 +86,7 @@
   font-size: 16px;
   display: flex;
   align-items: center;
+  word-break : break-all;
 }
 
 .room-icon {

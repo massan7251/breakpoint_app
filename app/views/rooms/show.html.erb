@@ -1,16 +1,16 @@
 <div class="chat-room-contents">
 
 <div class="room-titles">
-  <div class="content">
-  <div class="contents-title">このルームのアジェンダ</div>
+  <div class="agenda-content">
+    <div class="contents-title">このルームのアジェンダ</div>
   <div class="agenda">
     <%= @room.agenda %>
   </div>
 </div>
 
 <div class="content">
-<div class="contents-title">このルームのスタンス</div>
   <div class="stance-contents">
+    <div class="contents-title">このルームのスタンス</div>
     <div class="stance-content">
       <div class="stance-title">スタンスA</div>
       <div class="stance">
@@ -25,25 +25,25 @@
       </div>
     </div>
   </div>
-</div>
 
 <% if user_signed_in? && current_user.id == @room.user_id %>
 <ul class="owner-menu">
   <li class="owner-menu-list">
     <a href="#" class="init-bottom">
-      menu<%= image_tag '矢印アイコン 下4.png', size: '12x12', class: "owner-menu-icon" %>
+      メニュー<%= image_tag '矢印アイコン 下4.png', size: '12x12', class: "owner-menu-icon" %>
     </a>
   <ul class="second-menu">
     <li>
     <%= link_to room_path, method: :delete, class: "room-destroy" do %>
       <%= image_tag 'ゴミ箱のアイコン素材.png', size: '16x16' %>
-      削除
+      ルーム削除
     <% end %>
     </li>
   </ul>
   </li>
 </ul>
 <% end %>
+</div>
 
 </div>
 
@@ -57,12 +57,26 @@
     <input type="radio" name="tab_name" id="tab_a">
     <label class="tab_content" for="tab_a">スタンスA</label>
     <div class="chat-content">
-      スタンスAのチャットフォーム
+      
+      <%= form_with(model: [@room, @post], local: true) do |f| %>
+      <div class="form-input">
+        <%= f.text_area :post_a, class: 'form-comment', placeholder: 'スタンスAとしてコメント' %>
+      </div>
+      <%= f.submit 'コメントを投稿する', class: 'form-submit' %>
+      <% end %>
+
     </div>
     <input type="radio" name="tab_name" id="tab_b">
     <label class="tab_content" for="tab_b">スタンスB</label>
     <div class="chat-content">
-      スタンスBのチャットフォーム
+      
+      <%= form_with(model: [@room, @post], local: true) do |f| %>
+      <div class="form-input">
+        <%= f.text_area :post_b, class: 'form-comment', placeholder: 'スタンスBとしてコメント' %>
+      </div>
+      <%= f.submit 'コメントを投稿する', class: 'form-submit' %>
+      <% end %>
+
     </div>
   </div>
 
