@@ -1,7 +1,7 @@
 class Room < ApplicationRecord
 
+  belongs_to :user
   has_many :posts
-  has_many :users, through: :posts
 
   with_options presence: true do
     validates :agenda, length: { maximum: 50 }

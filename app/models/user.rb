@@ -6,6 +6,7 @@ class User < ApplicationRecord
          
   has_many :posts
   has_many :rooms, through: :posts
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :prefecture
   belongs_to :gender

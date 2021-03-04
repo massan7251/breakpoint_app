@@ -25,7 +25,7 @@
       </div>
     </div>
   </div>
-<!--
+
 <% if user_signed_in? && current_user.id == @room.user_id %>
 <ul class="owner-menu">
   <li class="owner-menu-list">
@@ -43,7 +43,7 @@
   </li>
 </ul>
 <% end %>
--->
+
 </div>
 
 </div>
@@ -51,7 +51,44 @@
 <div class="chat-contents">
 
   <div class="chat-view">
-  ここにコメントを表示
+  
+  <div class="coments">
+  <% @posts.each do |post| %>
+  <div class="post-contents">
+    <div class="side_a">
+    <% if post.post_b == nil %>
+      <div class="speach_bubble_left">
+        <%= post.post_a %>
+        <div class="user-states">
+          <div class="user-name">
+            name:<%= post.user.name %>
+          </div>
+          <%= post.user.gender.name %>
+          <%= post.user.prefecture.name %>
+          <%= post.user.job.name %>
+        </div>
+      </div>
+    <% end %>
+    </div>
+    <div class="side_b">
+    <% if post.post_a == nil %>
+      <div class="speach_bubble_right">
+        <%= post.post_b %>
+        <div class="user-states">
+          <div class="user-name">
+            name:<%= post.user.name %>
+          </div>
+          <%= post.user.gender.name %>
+          <%= post.user.prefecture.name %>
+          <%= post.user.job.name %>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+  <% end %>
+  </div>
+
   </div>
 
   <div class="chat-form">
