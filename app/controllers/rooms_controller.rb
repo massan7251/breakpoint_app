@@ -21,7 +21,8 @@ class RoomsController < ApplicationController
   end
 
   def show
-    @post = Post.create
+    @post = Post.new
+    @posts = @room.posts.includes(:user)
   end
 
   def destroy
