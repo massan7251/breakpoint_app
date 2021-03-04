@@ -67,6 +67,12 @@
           <%= post.user.prefecture.name %>
           <%= post.user.job.name %>
         </div>
+        <% if current_user.id == post.user_id %>
+          <%= link_to room_post_path(@room, post), method: :delete, class: "post-destroy" do %>
+            <%= image_tag 'ゴミ箱のアイコン素材.png', size: '13x13' %>
+            削除
+          <% end %>
+        <% end %>
       </div>
     <% end %>
     </div>
@@ -82,6 +88,12 @@
           <%= post.user.prefecture.name %>
           <%= post.user.job.name %>
         </div>
+        <% if current_user.id == post.user_id %>
+          <%= link_to room_post_path(@room, post), method: :delete, class: "post-destroy" do %>
+            <%= image_tag 'ゴミ箱のアイコン素材.png', size: '13x13' %>
+            削除
+          <% end %>
+        <% end %>
       </div>
     <% end %>
     </div>

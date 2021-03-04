@@ -100,6 +100,7 @@
 
 .user-states {
   margin-top: 10px;
+  margin-bottom: 5px;
   font-size: 10px;
   display: flex;
   flex-direction: column;
@@ -181,6 +182,12 @@
   border: 14px solid transparent;
   border-left: 14px solid #555;
   z-index: 1;
+}
+
+.post-destroy {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
 }
 
 .tab_content {

@@ -6,6 +6,12 @@ class PostsController < ApplicationController
     redirect_to "/rooms/#{post.room.id}"
   end
 
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
+    redirect_to "/rooms/#{post.room.id}"
+  end
+
   private
 
   def post_params
