@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe Room, type: :model do
   before do
     @room = FactoryBot.build(:room)
-    @user = FactoryBot.build(:user)
   end
 
   describe 'チャットルーム新規作成' do

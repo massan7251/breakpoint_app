@@ -3,6 +3,6 @@ FactoryBot.define do
     agenda      {'A or B'}
     stanceA     {'A'}
     stanceB     {'B'}
-    user_id     {1}
+    association :user
   end
 end

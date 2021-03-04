@@ -59,6 +59,14 @@
     <% if post.post_b == nil %>
       <div class="speach_bubble_left">
         <%= post.post_a %>
+        <div class="user-states">
+          <div class="user-name">
+            name:<%= post.user.name %>
+          </div>
+          <%= post.user.gender.name %>
+          <%= post.user.prefecture.name %>
+          <%= post.user.job.name %>
+        </div>
       </div>
     <% end %>
     </div>
@@ -66,6 +74,14 @@
     <% if post.post_a == nil %>
       <div class="speach_bubble_right">
         <%= post.post_b %>
+        <div class="user-states">
+          <div class="user-name">
+            name:<%= post.user.name %>
+          </div>
+          <%= post.user.gender.name %>
+          <%= post.user.prefecture.name %>
+          <%= post.user.job.name %>
+        </div>
       </div>
     <% end %>
     </div>

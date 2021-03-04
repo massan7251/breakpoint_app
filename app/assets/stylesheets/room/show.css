@@ -90,7 +90,7 @@
 
 .side_a, .side_b {
   height: 100%;
-  width: 40%;
+  width: 50%;
   padding: 0 20px;
 }
 
@@ -98,19 +98,27 @@
   text-align: right;
 }
 
+.user-states {
+  margin-top: 10px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .speach_bubble_left {
   position: relative;
   display: inline-block;
   margin: 1.5em 0 1.5em 15px;
   color: #555;
-  font-size: 16px;
+  font-size: 20px;
   background: rgb(247, 88, 88);
   border: solid 3px #555;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 15px 10px;
   word-break : break-all;
-  min-width: 120px;
+  min-width: 150px;
   max-width: 100%;
 }
 
@@ -141,7 +149,7 @@
   display: inline-block;
   margin: 1.5em 15px 1.5em 0;
   color: #555;
-  font-size: 16px;
+  font-size: 20px;
   background: aqua;
   border: solid 3px #555;
   box-sizing: border-box;
@@ -149,7 +157,7 @@
   padding: 15px 10px;
   text-align: left;
   word-break : break-all;
-  min-width: 120px;
+  min-width: 150px;
   max-width: 100%;
 }
 
@@ -217,7 +225,7 @@ input:checked + .tab_content + .chat-content {
   padding: 0;
 }
 
-.owner-menu > li > a {
+.owner-menu li a {
   text-decoration: none;
   color: black;
   font-size: 18px;
@@ -227,7 +235,7 @@ input:checked + .tab_content + .chat-content {
   margin-left: 3px;
 }
 
-.owner-menu > li.owner-menu-list {
+.owner-menu li.owner-menu-list {
   position: relative;
   margin: 0;
 }
