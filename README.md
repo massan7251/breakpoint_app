@@ -22,21 +22,18 @@ BreakPointではユーザー登録をすることでチャットルームの作�
 
 # 実装した機能の詳細
 
-<img width="300" alt="image" src="https://i.gyazo.com/cbedcfd6b6eb378d7c4f26a1cdfa3dcd.png">
-
 * トップページ
+<img width="300" alt="image" src="https://i.gyazo.com/cbedcfd6b6eb378d7c4f26a1cdfa3dcd.png">
     * トップページにはチャットルームの一覧が表示されており、ログイン状態であればチャットルームに入室できます。
     * チャットルームを作成ボタンからチャットルーム作成ページへ遷移します。
-
-<img width="300" alt="image" src="https://i.gyazo.com/38ebd5a88af1bf89fdba9a6a979ca21e.gif">
-
+<br>
 * チャットルーム作成、削除
+<img width="300" alt="image" src="https://i.gyazo.com/38ebd5a88af1bf89fdba9a6a979ca21e.gif">
     * チャットルーム作成時にアジェンダと2つのスタンスを設定します。
     * チャットルームを作成したユーザーであればチャットルームの削除を行えます。
-
-<img width="300" alt="image" src="https://i.gyazo.com/0077ad82edb99bdd224f17c6643f040e.gif">
-
+<br>
 * コメント投稿機能
+<img width="300" alt="image" src="https://i.gyazo.com/0077ad82edb99bdd224f17c6643f040e.gif">
     * チャットルーム下部でスタンスを選択するとコメント入力フォームが表示されます。
     * 投稿されたコメントは選択したスタンスに応じて表示位置と背景色が変化します。
 
