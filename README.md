@@ -4,7 +4,7 @@ BreakPointは「気軽にディベートを楽しむ」がコンセプトの、L
 ユーザーは自由にチャットルームを作り、または参加して気軽にディベートを楽しむことができます。
 
 # アプリケーション URL
-breakPoint [https://breakpoint-84539.herokuapp.com/]
+breakPoint [http://35.73.75.243/]
 
 ## basic認証ID/PASSWORD
 name : admin<br>
