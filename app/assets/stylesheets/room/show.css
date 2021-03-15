@@ -110,6 +110,7 @@
 .speach_bubble_left {
   position: relative;
   display: inline-block;
+  flex-direction: column;
   margin: 1.5em 0 1.5em 15px;
   color: #555;
   font-size: 20px;
@@ -292,6 +293,10 @@ li.owner-menu-list:hover ul.second-menu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.post-image {
+  margin-top: 5px;
 }
 
 .image-file {

@@ -59,7 +59,9 @@
     <% if post.post_b == nil %>
       <div class="speach_bubble_left">
         <%= post.post_a %>
-        <%= image_tag post.image.variant(resize: '500x500'), class: 'post-image' if post.image.attached? %>
+        <div  class="post-image">
+          <%= image_tag post.image.variant(resize: '80x80') if post.image.attached? %>
+        </div>
         <div class="user-states">
           <div class="user-name">
             name:<%= post.user.name %>
@@ -81,7 +83,9 @@
     <% if post.post_a == nil %>
       <div class="speach_bubble_right">
         <%= post.post_b %>
-        <%= image_tag post.image.variant(resize: '500x500'), class: 'post-image' if post.image.attached? %>
+        <div  class="post-image">
+          <%= image_tag post.image.variant(resize: '80x80') if post.image.attached? %>
+        </div>
         <div class="user-states">
           <div class="user-name">
             name:<%= post.user.name %>
@@ -116,7 +120,7 @@
         <label class="form-image">
           <%= image_tag '写真アイコン4.png', size: '30x30' %>
           <span class="image-file">画像を選択</span>
-          <input type="file" class="hidden">
+          <%= f.file_field :image, class: 'hidden' %>
         </label>
       </div>
       <%= f.submit 'コメントを投稿する', class: 'form-submit' %>
@@ -133,7 +137,7 @@
         <label class="form-image">
           <%= image_tag '写真アイコン4.png', size: '30x30' %>
           <span class="image-file">画像を選択</span>
-          <input type="file" class="hidden">
+          <%= f.file_field :image, class: 'hidden' %>
         </label>
       </div>
       <%= f.submit 'コメントを投稿する', class: 'form-submit' %>
