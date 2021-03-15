@@ -268,11 +268,38 @@ li.owner-menu-list:hover ul.second-menu {
   align-items: center;
 }
 
+.form-input {
+  display: flex;
+  width: 100%;
+}
+
 .form-comment {
   font-size: 15px;
   height: 100px;
   width: 100%;
   border-radius: 0;
+}
+
+.form-image {
+  font-size: 15px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  margin-bottom: 0;
+  width: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-file {
+  margin-top: 5px;
+}
+
+.hidden {
+  display: none;
 }
 
 .form-submit {
