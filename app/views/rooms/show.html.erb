@@ -115,12 +115,13 @@
     <div class="chat-content">
       
       <%= form_with(model: [@room, @post], local: true) do |f| %>
+      <div class='preview', id="preview-list_1"></div>
       <div class="form-input">
         <%= f.text_area :post_a, class: 'form-comment', placeholder: 'スタンスAとしてコメント' %>
         <label class="form-image">
           <%= image_tag '写真アイコン4.png', size: '30x30' %>
           <span class="image-file">画像を選択</span>
-          <%= f.file_field :image, class: 'hidden' %>
+          <%= f.file_field :image, class: 'hidden', id: 'post_image_1' %>
         </label>
       </div>
       <%= f.submit 'コメントを投稿する', class: 'form-submit' %>
@@ -132,12 +133,13 @@
     <div class="chat-content">
       
       <%= form_with(model: [@room, @post], local: true) do |f| %>
+      <div class='preview', id="preview-list_2"></div>
       <div class="form-input">
         <%= f.text_area :post_b, class: 'form-comment', placeholder: 'スタンスBとしてコメント' %>
         <label class="form-image">
           <%= image_tag '写真アイコン4.png', size: '30x30' %>
           <span class="image-file">画像を選択</span>
-          <%= f.file_field :image, class: 'hidden' %>
+          <%= f.file_field :image, class: 'hidden', id: 'post_image_2' %>
         </label>
       </div>
       <%= f.submit 'コメントを投稿する', class: 'form-submit' %>
