@@ -4,7 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
          
-  has_many :posts
+  has_many :posts, through: :likes
+  has_many :likes
   has_many :rooms, through: :posts
 
   extend ActiveHash::Associations::ActiveRecordExtensions

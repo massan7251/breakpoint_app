@@ -1,6 +1,7 @@
 class Post < ApplicationRecord
 
   belongs_to :user
+  has_many :likes
   belongs_to :room
   has_one_attached :image
   
