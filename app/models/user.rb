@@ -9,6 +9,10 @@ class User < ApplicationRecord
   has_many :liked_posts, through: :likes, source: :post
   has_many :rooms, through: :posts
 
+  def already_liked?(post)
+    self.likes.exists?(post_id: post.id)
+  end
+
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :prefecture
   belongs_to :gender
