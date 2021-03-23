@@ -6,11 +6,11 @@ class User < ApplicationRecord
          
   has_many :posts
   has_many :likes
-  has_many :liked_posts, through: :likes, source: :post
+  has_many :favorites, through: :likes, source: :post
   has_many :rooms, through: :posts
 
-  def already_liked?(post)
-    self.likes.exists?(post_id: post.id)
+  def like_this(clicked_post)
+    self.likes.find_or_create_by(post: clicked_post)
   end
 
   extend ActiveHash::Associations::ActiveRecordExtensions

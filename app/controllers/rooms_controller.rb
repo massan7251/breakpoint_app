@@ -23,7 +23,6 @@ class RoomsController < ApplicationController
   def show
     @post = Post.new
     @posts = @room.posts.includes(:user)
-    @like = Like.new
   end
 
   def destroy

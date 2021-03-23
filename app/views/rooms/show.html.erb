@@ -70,12 +70,34 @@
           <%= post.user.prefecture.name %>
           <%= post.user.job.name %>
         </div>
+
+          <% if current_user.id != post.user.id %>
+　　　　　　
+          <% if current_user.favorites.include?(post) %>
+          <div class="like_btn_cancel">
+            <%= form_with(model: @like, url: like_path(id: post.id), local: true, method: :delete) do |f| %>
+              <%= f.hidden_field :post_id, value: post.id %>
+              <%= f.submit 'いいね解除' %>
+            <% end %>
+          </div>
+          <% else %>
+          <div class="like_btn">
+            <%= form_with(model: @like, url: likes_path, local: true) do |f| %>
+              <%= f.hidden_field :post_id, value: post.id %>
+              <%= f.submit 'いいね' %>
+            <% end %>
+          </div>
+          <% end %>
+
+          <% end %>
+
         <% if current_user.id == post.user_id %>
           <%= link_to room_post_path(@room, post), method: :delete, class: "post-destroy" do %>
             <%= image_tag '562_ex_f.png', size: '13x13' %>
             削除
           <% end %>
         <% end %>
+
       </div>
     <% end %>
     </div>
@@ -94,12 +116,14 @@
           <%= post.user.prefecture.name %>
           <%= post.user.job.name %>
         </div>
+
         <% if current_user.id == post.user_id %>
           <%= link_to room_post_path(@room, post), method: :delete, class: "post-destroy" do %>
             <%= image_tag '562_ex_f.png', size: '13x13' %>
             削除
           <% end %>
         <% end %>
+
       </div>
     <% end %>
     </div>
